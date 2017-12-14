@@ -21,7 +21,7 @@ map = [
 ['#',' ',' ','#',],
 ['#',' ',' ','#',],
 ['#','#','#','#',],
-]
+] 
 
 
 
@@ -32,12 +32,10 @@ while game_running:
 	for x in range (8):
 		for y in range(4):
 			if map[x][y]:
-
 				console.draw_char(x, y, map[x][y])
 
 	p.draw(console)
 	
-
 	tdl.flush()
 
 	print(p.position)

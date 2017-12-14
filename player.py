@@ -2,10 +2,13 @@ class Player(object):
 	def __init__(self):
 		self.position = 0, 0
 
+
 	def draw(self, console):
 		if self.position in console:
 			console.draw_char(self.position[0], self.position[1], '@')
-
+		if self.position < (0, 0):
+    			self.position = 0, 0
+			
 
 	def update(self):
 		pass
